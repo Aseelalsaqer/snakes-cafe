@@ -40,7 +40,6 @@ if __name__ == "__main__":
             print("**************")
         print(
             f"* {order_counter} order of {x} have been added to your meal *")
-        print("You can end your order by enter quit")
         print("This is The List of your oreder..")
         for i in range(len(orders)):
             print(orders[i], sep="\n")
