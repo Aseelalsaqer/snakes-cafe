@@ -24,7 +24,7 @@ def handle_print():
     takes no argument
     return nothing"""
     print("""**************************************
-**    Welcome to the Snakes Cafe!:snake: **
+**    Welcome to the Snakes Cafe! **
 **    Please see our menu below.    **
 **
 ** To quit at any time, type "quit" **
@@ -40,7 +40,7 @@ def handle_print():
 ***********************************""")
 
 
-order_list = []
+user_list = []
 
 
 def handle_order():
@@ -48,17 +48,17 @@ def handle_order():
     order = input("> ")
     if order != "quit":
         if order in available_menu:
-            order_list.append(order)
-            if order in order_list:
+            user_list.append(order)
+            if order in user_list:
                 count = 0
-                for i in order_list:
+                for i in user_list:
                     if i == order:
                         count += 1
                 print(
                     f"** {count} order of {order} have been added to your meal **")
                 handle_order()
             else:
-                order_list.append(order)
+                user_list.append(order)
                 print(f"** 1 order of {order} have been added to your meal **")
                 handle_order()
         else:
