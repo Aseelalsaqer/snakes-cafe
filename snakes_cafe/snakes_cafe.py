@@ -15,12 +15,8 @@ menu = [
         "available_types": ["Coffee", "Tea", "Unicorn Tears"]
     }
 ]
-available_menu = ['wings', 'cookies',
-                  'spring rolls', 'salmon',
-                  'steak', 'meat tornado',
-                  'a literal garden', 'ice Cream',
-                  'cake', 'pie', 'coffee',
-                  'tea', 'unicorn tears']
+available_menu = ['wings', 'cookies', 'spring rolls', 'salmon', 'steak', 'meat tornado',
+                  'a literal garden', 'ice Cream', 'cake', 'pie', 'coffee', 'tea', 'unicorn tears']
 
 
 def handle_print():
