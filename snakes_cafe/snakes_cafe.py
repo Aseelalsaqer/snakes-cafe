@@ -40,7 +40,7 @@ def handle_print():
 ***********************************""")
 
 
-user_list = []
+order_list = []
 
 
 def handle_order():
@@ -48,19 +48,21 @@ def handle_order():
     order = input("> ")
     if order != "quit":
         if order in available_menu:
-            user_list.append(order)
-            if order in user_list:
+
+            order_list.append(order)
+            if order in order_list:
                 count = 0
-                for i in user_list:
+                for i in order_list:
                     if i == order:
                         count += 1
                 print(
                     f"** {count} order of {order} have been added to your meal **")
                 handle_order()
             else:
-                user_list.append(order)
+                order_list.append(order)
                 print(f"** 1 order of {order} have been added to your meal **")
                 handle_order()
+
         else:
             print(f"please choose item form the menu or type quit to quit")
             handle_order()
